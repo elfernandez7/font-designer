@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Font Designer</title>
+</head>
+<body>
+    <!-- Top Menu -->
+    <div>
+        <ul class="top-menu">
+            <li class="link body-font" id="saved">Saved Pairings</li>
+            <li class="link body-font"  id="colors">Colors</li>
+        </ul>
+    </div>
+    <!-- Sidebar Control Menu -->
+    <div class="sidebar">
+        <h3 id="sidebarTitle" class="subheading-font subheading-text"></h3>
+        <div  id="side-div">
+            <form id="form" class=" heading-form">
+                <label for="fontSelect" class="body-font body-text">Font Family:</label>
+                <select name="font-family" id="fontSelectH" class=" fontSelect dropdown heading">
+                    <option value="">Select Heading Font</option>
+                    <option value="Gayathri" class = "body-font body-text">Gayathri</option>
+                    <option value="Prata" class = "body-font body-text">Prata</option>
+                    <option value="Play" class = "body-font body-text">Play</option>
+                    <option value="Yellowtail" class = "body-font body-text">Yellowtail</option>
+                    <option value="Dancing Script" class = "body-font body-text">Dancing Script</option>
+                    <option value="Architects Daughter" class = "body-font body-text">Architects Daughter</option>
+                    <option value="Rajdhani" class = "body-font body-text">Rajdhani</option>
+                    <option value="Dosis" class = "body-font body-text">Dosis</option>
+                    <option value="Bebas Neue" class = "body-font body-text">Bebas Neue</option>
+                    <option value="Roboto Slab" class = "body-font body-text">Roboto Slab</option>
+                    <option value="Titillium Web" class = "body-font body-text">Titillium Web</option>
+                    <option value="Playfair Display" class = "body-font body-text">Playfair Display</option>
+                    <option value="Roboto Mono" class = "body-font body-text">Roboto Mono</option>
+                    <option value="Oswald" class = "body-font body-text">Oswald</option>
+                    <option value="Lato" class = "body-font body-text">Lato</option>
+                    <option value="Open Sans" class = "body-font body-text">Open Sans</option>
+                    <option value="Montserrat" class = "body-font body-text">Montserrat</option>
+                    <option value="Radio Canada Big" class = "body-font body-text">Radio Canada Big</option>
+                    <option value="Roboto" class = "body-font body-text">Roboto</option>
+                    <option value="Amatic SC" class = "body-font body-text">Amatic SC</option>
+                    <option value="Georgia" class = "body-font body-text">Georgia</option>
+                    <option value="Times New Roman" class = "body-font body-text">Times New Roman</option>
+                    <option value="Arial" class = "body-font body-text">Arial</option>
+                    <option value="ALucida Sans" class = "body-font body-text">Lucida Sans</option>
+                    <option value="Georgia" class = "body-font body-text">Georgia</option>
+                </select>
+                <label for="fontSize" class="body-font body-text">Font Size:</label>  
+                <input type="range" min="1" max="100" value="42" name="fontSize" id="fontSizeH" class=" fontSize slider heading">
+                <label for="fontWeight" class="body-font body-text">Font Weight:</label>
+                <input type="range" min="100" max="900" value="500" name="fontWeight" id="fontWeightH" class="slider heading">
+                <label for="textTransform" class="body-font body-text">Text Transform:</label>
+                <select name="textTransform" id="textTransformH" class="dropdown heading">
+                    <option value="Normal" class = "body-font body-text">Normal</option>
+                    <option value="Captalize" class = "body-font body-text">Capitalize</option>
+                    <option value="Uppercase" class = "body-font body-text">Uppercase</option>
+                    <option value="Lowercase" class = "body-font body-text">Lowercase</option>
+                </select>
+                <label for="lineHeight" class="body-font body-text">Line Height:</label>
+                <input type="range" min="1" max="100" value="50" name="lineHeight" id="lineHeightH" class="slider heading">
+                <label for="letterSpace" class="body-font body-text">Letter Spacing:</label>
+                <input type="range" min="-20" max="20" value="1" name="letterSpace" id="letterSpaceH" class="slider heading"></input>
+                </form>
+                <form id="form" class="subheading-form">
+                    <label for="fontSelect" class="body-font body-text">Font Family:</label>
+                    <select name="font-family" id="fontSelectS" class="fontSelect dropdown subheading">
+                        <option value="">Select Subheading Font</option>
+                        <option value="Gayathri">Gayathri</option>
+                        <option value="Prata">Prata</option>
+                        <option value="Play">Play</option>
+                        <option value="Yellowtail">Yellowtail</option>
+                        <option value="Dancing Script">Dancing Script</option>
+                        <option value="Architects Daughter">Architects Daughter</option>
+                        <option value="Rajdhani">Rajdhani</option>
+                        <option value="Dosis">Dosis</option>
+                        <option value="Bebas Neue">Bebas Neue</option>
+                        <option value="Roboto Slab">Roboto Slab</option>
+                        <option value="Titillium Web">Titillium Web</option>
+                        <option value="Playfair Display">Playfair Display</option>
+                        <option value="Roboto Mono">Roboto Mono</option>
+                        <option value="Oswald">Oswald</option>
+                        <option value="Lato">Lato</option>
+                        <option value="Open Sans">Open Sans</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Radio Canada Big">Radio Canada Big</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Amatic SC">Amatic SC</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Arial">Arial</option>
+                        <option value="ALucida Sans">Lucida Sans</option>
+                        <option value="Georgia">Georgia</option>
+                    </select>
+                    <label for="fontSize" class="body-font body-text">Font Size:</label>  
+                    <input type="range" min="1" max="100" value="42" name="fontSize" id="fontSizeS" class="fontSize slider subheading">
+                    <label for="fontWeight" class="body-font body-text">Font Weight:</label>
+                    <input type="range" min="100" max="900" value="500" name="fontWeight" id="fontWeightS" class="slider subheading">
+                    <label for="textTransform" class="body-font body-text">Text Transform:</label>
+                    <select name="textTransform" id="textTransformS" class="dropdown subheading">
+                        <option value="Normal">Normal</option>
+                        <option value="Captalize">Capitalize</option>
+                        <option value="Uppercase">Uppercase</option>
+                        <option value="Lowercase">Lowercase</option>
+                    </select>
+                    <label for="lineHeight" class="body-font body-text">Line Height:</label>
+                    <input type="range" min="1" max="100" value="50" name="lineHeight" id="lineHeightS" class="slider subheading">
+                    <label for="letterSpace" class="body-font body-text">Letter Spacing:</label>
+                    <input type="range" min="-20" max="20" value="1" name="letterSpace" id="letterSpaceS" class="slider subheading"></input>
+                    </form>
+                    <form id="form" class="body-form">
+                        <label for="fontSelect" class="body-font body-text">Font Family:</label>
+                        <select name="fontSelect" value="" id="fontSelectB" class="dropdown body">
+                            <option value="">Select Body Font</option>
+                            <option value="Gayathri">Gayathri</option>
+                            <option value="Prata">Prata</option>
+                            <option value="Play">Play</option>
+                            <option value="Yellowtail">Yellowtail</option>
+                            <option value="Dancing Script">Dancing Script</option>
+                            <option value="Architects Daughter">Architects Daughter</option>
+                            <option value="Rajdhani">Rajdhani</option>
+                            <option value="Dosis">Dosis</option>
+                            <option value="Bebas Neue">Bebas Neue</option>
+                            <option value="Roboto Slab">Roboto Slab</option>
+                            <option value="Titillium Web">Titillium Web</option>
+                            <option value="Playfair Display">Playfair Display</option>
+                            <option value="Roboto Mono">Roboto Mono</option>
+                            <option value="Oswald">Oswald</option>
+                            <option value="Lato">Lato</option>
+                            <option value="Open Sans">Open Sans</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Radio Canada Big">Radio Canada Big</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Amatic SC">Amatic SC</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Arial">Arial</option>
+                            <option value="ALucida Sans">Lucida Sans</option>
+                            <option value="Georgia">Georgia</option>
+                        </select>
+                        <label for="fontSize" class="body-font body-text">Font Size:</label>  
+                        <input type="range" min="1" max="100" value="42" name="fontSize" id="fontSizeB" class="slider body">
+                        <label for="fontWeight" class="body-font body-text">Font Weight:</label>
+                        <input type="range" min="100" max="900" value="500" name="fontWeight" id="fontWeightB" class="slider body">
+                        <label for="textTransform" class="body-font body-text">Text Transform:</label>
+                        <select name="textTransform" id="textTransformB" class="dropdown body">
+                            <option value="Normal">Normal</option>
+                            <option value="Captalize">Capitalize</option>
+                            <option value="Uppercase">Uppercase</option>
+                            <option value="Lowercase">Lowercase</option>
+                        </select>
+                        <label for="lineHeight" class="body-font body-text">Line Height:</label>
+                        <input type="range" min="1" max="100" value="50" name="lineHeight" id="lineHeightB" class="slider body">
+                        <label for="letterSpace" class="body-font body-text">Letter Spacing:</label>
+                        <input type="range" min="-20" max="20" value="1" name="letterSpace" id="letterSpaceB" class="slider body"></input>
+                        </form>
+                        <nav id="saved-list"></nav>
+        </div>
+        
+    </div>
+    <!-- Main Pairing -->
+     <div class="left-content" id="main-pairing">
+        <h1 id="heading" class="heading-font heading-text underline">New Font Pairing 1</h1>
+        <h3 id="subheading" class=" subheading-text subheading-font underline">Use subheaders to add context to your websites text blocks and clearly define your sections.</h3>
+        <p id="body-text" class="body-font body-text underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi odio obcaecati harum perspiciatis repellendus est, unde exercitationem commodi corrupti iste sequi, earum facere consequuntur ipsum fugit reiciendis illo eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus inventore eius dolorem accusantium doloribus laudantium dicta deserunt aliquid natus excepturi eaque ut doloremque itaque suscipit cum sit, numquam distinctio corporis.</p>
+        <div class="button-group">
+            <button class="body-font body-text">Save Pairing</button>
+            <button  class="body-font body-text">
+                <a href="#copy-css" class="btn-link">Copy CSS</a>
+            </button>
+        </div>
+    </div>
+    <!-- Font Breakdown -->
+   <div class="left-content">
+    <div class="font-display">
+        <h3 class="heading-font display-title">Heading</h3>
+        <div>
+            <h3 class="heading-font display-cont heading-name">Playfair Display</h3>
+            <p class="heading-font display-cont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="heading-font display-cont">abcdefghijklmnopqrstuvwxyz</p>
+        </div>
+    </div>
+    <div class="font-display">
+        <h3 class="subheading-font display-title">Sub-Header</h3>
+        <div>
+            <h3 class="subheading-font display-cont subheading-name">Lato</h3>
+            <p class="subheading-font display-cont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="subheading-font display-cont">abcdefghijklmnopqrstuvwxyz</p>
+        </div>
+    </div>
+    <div class="font-display">
+        <h3 class="body-font display-title">Body</h3>
+        <div>
+            <h3 class="body-font display-cont body-name">Roboto</h3>
+            <p class="body-font display-cont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="body-font display-cont">abcdefghijklmnopqrstuvwxyz</p>
+        </div>
+    </div>
+   </div>
+   <!-- Copy Classes -->
+   <div class="left-content">
+   <div id="copy-css" >
+    <div class="css-div section-underline">
+        <h3 class="subheading-font ">CSS</h3>
+    </div>
+        <div class="css-div">
+            <h3 class="body-font css-cont ">.heading-text{</h3>
+                <ul id="heading-css" class="body-font css-cont css-list"></ul>
+            <h3 class="body-font css-cont">}</h3>
+            </br>
+            <h3 class="body-font css-cont">.subheading-text{</h3>
+                <ul id="subheading-css" class="body-font css-cont css-list"></ul>
+            <h3 class="body-font css-cont">}</h3>
+            </br>
+            <h3 class="body-font css-cont">.body-text{</h3>
+                <ul id="body-css" class="body-font css-list"></ul>
+            <h3 class="body-font css-cont">}</h3>
+            </div>
+    </div>
+    </div> 
+</body>
+</html>
